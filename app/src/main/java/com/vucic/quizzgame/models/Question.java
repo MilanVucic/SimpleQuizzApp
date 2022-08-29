@@ -41,9 +41,12 @@ public class Question {
         list.add(new Question("How tall is the Eiffel Tower?", 5,
                 new Answer("324m", true), new Answer("552m", false),
                 new Answer("124m", false)));
-        list.add(new Question("How many moons does Jupiter have?", 10,
+        list.add(new Question("How many moons does Jupiter have?", 12,
                 new Answer("44", false), new Answer("67", false),
                 new Answer("79", true)));
+        list.add(new Question("What is the largest country by population?", 6,
+                new Answer("India", false), new Answer("China", true),
+                new Answer("USA", false)));
         return list;
     }
 }

@@ -14,6 +14,27 @@
         android:text="Time: 30"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/pointsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points: 0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/timeProgressBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="59"
+        android:layout_marginLeft="@dimen/standard_padding"
+        android:layout_marginRight="@dimen/standard_padding"
+        app:layout_constraintTop_toTopOf="@id/timerTextView"
+        app:layout_constraintBottom_toBottomOf="@id/timerTextView"
+        app:layout_constraintLeft_toRightOf="@id/timerTextView"
+        app:layout_constraintRight_toLeftOf="@id/pointsTextView"/>
 
     <TextView
         android:id="@+id/questionTextView"
