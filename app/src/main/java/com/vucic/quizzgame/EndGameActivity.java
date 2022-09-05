@@ -30,7 +30,12 @@ public class EndGameActivity extends AppCompatActivity {
     }
 
     private void saveHighScore(int points) {
+        // saveHighscore(int points)
+        // List<HighScorer> getHighscore
+        // highscore_1
+        // name_1
         // int string
+        HighScoreSaving highScoreSaving = HighScoresFactory.getHighScoreSaving(this);
         SharedPreferences sharedPreferences =
                 PreferenceManager.getDefaultSharedPreferences(this);
         int highScore = sharedPreferences.getInt(Tags.HIGH_SCORE, 0);
